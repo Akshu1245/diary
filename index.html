@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyDiary - Secure & Encrypted Journal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'background': 'hsl(222.2 84% 4.9%)',
+              'foreground': 'hsl(210 40% 98%)',
+              'card': 'hsl(222.2 84% 4.9%)',
+              'card-foreground': 'hsl(210 40% 98%)',
+              'popover': 'hsl(222.2 84% 4.9%)',
+              'popover-foreground': 'hsl(210 40% 98%)',
+              'primary': 'hsl(210 40% 98%)',
+              'primary-foreground': 'hsl(222.2 47.4% 11.2%)',
+              'secondary': 'hsl(217.2 32.6% 17.5%)',
+              'secondary-foreground': 'hsl(210 40% 98%)',
+              'muted': 'hsl(217.2 32.6% 17.5%)',
+              'muted-foreground': 'hsl(215 20.2% 65.1%)',
+              'accent': 'hsl(217.2 32.6% 17.5%)',
+              'accent-foreground': 'hsl(210 40% 98%)',
+              'destructive': 'hsl(0 62.8% 30.6%)',
+              'destructive-foreground': 'hsl(210 40% 98%)',
+              'border': 'hsl(217.2 32.6% 17.5%)',
+              'input': 'hsl(217.2 32.6% 17.5%)',
+              'ring': 'hsl(212.7 26.8% 83.9%)',
+            },
+            borderRadius: {
+              lg: `0.5rem`,
+              md: `calc(0.5rem - 2px)`,
+              sm: `calc(0.5rem - 4px)`,
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.8.2",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.542.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.1.2",
+    "date-fns": "https://aistudiocdn.com/date-fns@^4.1.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai"
+  }
+}
+</script>
+</head>
+  <body class="bg-background text-foreground">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
